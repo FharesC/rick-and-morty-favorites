@@ -1,12 +1,47 @@
-# React + Vite
+# Rick and Morty Favorites
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ **Descripción**  
+Rick and Morty Favorites es una aplicación construida con React que permite explorar personajes de la serie animada *Rick and Morty* mediante su API oficial.  
 
-Currently, two official plugins are available:
+La app ofrece una experiencia sencilla e interactiva para:  
+- Navegar y visualizar una lista de personajes.  
+- Ver detalles específicos de cada personaje.  
+- Marcar y gestionar personajes favoritos.  
+- Consultar la lista de favoritos en una sección dedicada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para manejar el estado global de favoritos, se utiliza Context API, y la navegación entre páginas se realiza con React Router DOM. Además, la app consume datos de la API usando axios.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estructura principal
+
+- **Componentes:** para mostrar la lista, detalles, tarjetas individuales y favoritos.  
+- **Contexto:** para mantener y actualizar la lista global de favoritos.  
+- **Rutas:** configuradas para facilitar la navegación entre listado, detalles y favoritos.
+
+---
+
+## Tecnologías usadas
+
+- React  
+- React Router DOM  
+- Context API  
+- Axios  
+- Vite (para la configuración y construcción del proyecto)  
+
+---
+
+## Cómo usarlo
+
+1. Clona el repositorio y ejecuta la instalación de dependencias.  
+2. Corre la aplicación localmente para explorar personajes y administrar favoritos.  
+
+---
+
+## Captura de pantalla
+
+*(Agrega aquí una imagen demostrativa del proyecto)*
+
+---
+
+¡Disfruta explorando el universo de Rick and Morty con esta app React! 🚀🛸  
