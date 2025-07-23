@@ -6,14 +6,22 @@ import CharacterCard from "./CharacterCard";
 import { useNavigate } from "react-router-dom";
 const CharacterList = () => {
   const navigate = useNavigate();
-  const { personajes, loading, filtrar, setPersonajes } =
+  const { personajes, loading, filtrar, setPersonajes, totalPersonajes } =
     useContext(FavoritesProvider);
 
   const filtrarPersonaje = (e) => {
     let palabra = e.target.value;
-    setPersonajes(filtrar.filter((item) => item.name.toLowerCase().includes(palabra.toLowerCase())));
+    setPersonajes(
+      filtrar.filter((item) =>
+        item.name.toLowerCase().includes(palabra.toLowerCase())
+      )
+    );
   };
 
+  const a = () => {
+    navigate("/favorites");
+    setPersonajes(totalPersonajes);
+  };
   return (
     <>
       {loading && (
@@ -41,7 +49,7 @@ const CharacterList = () => {
         <Button
           variant="outline-danger"
           className=" w-25 me-5  my-3"
-          onClick={() => navigate("/favorites")}
+          onClick={a}
         >
           {" "}
           Ir a Favoritos

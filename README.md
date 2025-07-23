@@ -40,7 +40,7 @@ Para manejar el estado global de favoritos, se utiliza Context API, y la navegac
 
 ## Captura de pantalla
 
-*(Agrega aquí una imagen demostrativa del proyecto)*
+![alt text](image.png)
 
 ---
 
